@@ -38,7 +38,7 @@ btn.addEventListener("click", async (evt) => {
     evt.preventDefault();
     let amount = document.querySelector(".amount input");
     let amtValue = amount.value;
-    if(amtValue === "" || amtValue <1 || typeof(amtValue) === 'string'){
+    if(amtValue === "" || amtValue <1) {  //|| typeof(amtValue) == 'string'){
         amtValue = 1;
         amount.value = 1
     }
